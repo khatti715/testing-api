@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAJA X DEVELOPER | Call Bomber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <main>
+    <!-- Header -->
+    <header>
+      <div class="logo-wrap">
+        <span class="logo-icon">◈</span>
+        <div>
+          <h1 class="logo">RAJA X DEVELOPER</h1>
+          <p class="tagline">PREMIUM CALL BOMBER</p>
+        </div>
+      </div>
+      <div class="badge">v1.0 • LIVE</div>
+    </header>
+
+    <!-- Card -->
+    <div class="card">
+      <div class="card-glow"></div>
+
+      <div class="section">
+        <label>TARGET NUMBER</label>
+        <input type="text" id="number" placeholder="3xxxxxxxxx" autocomplete="off" />
+      </div>
+
+      <div class="row">
+        <div class="section flex">
+          <label>ROUNDS</label>
+          <div class="rounds-wrap">
+            <button class="round-btn" id="minus">−</button>
+            <span class="rounds-val" id="rounds">15</span>
+            <button class="round-btn" id="plus">+</button>
+          </div>
+        </div>
+        <div class="section flex">
+          <label>METHOD</label>
+          <select id="method">
+            <option value="ivr">IVR</option>
+            <option value="call">CALL</option>
+            <option value="otp">OTP</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="bomb-btn" id="bombBtn">▶ LAUNCH BOMB</button>
+
+      <div class="status-bar">
+        <span class="status-dot" id="statusDot"></span>
+        <span class="status-text" id="statusText">READY</span>
+      </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="terminal">
+      <div class="term-header">
+        <span class="term-title">SYSTEM LOGS</span>
+        <button class="clear-btn" id="clearBtn">CLEAR</button>
+      </div>
+      <div class="term-body" id="logs">
+        <span class="term-empty">Waiting for command...</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <span>RAJA X DEVELOPER</span>
+      <span class="footer-dot">•</span>
+      <span>BUILT DIFFERENT</span>
+      <span class="footer-dot">•</span>
+      <span>203039022016</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
